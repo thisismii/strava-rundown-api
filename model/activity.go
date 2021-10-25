@@ -2,6 +2,14 @@ package model
 
 import "time"
 
+type TrainingDuration int
+
+const (
+	Week TrainingDuration = iota
+	Month
+	Year
+)
+
 type ActivityResponse struct {
 	ResourceState int `json:"resource_state"`
 	Athlete       struct {

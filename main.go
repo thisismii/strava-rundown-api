@@ -5,5 +5,7 @@ import (
 )
 
 func main() {
-	service.GetWeeklyRunningTotal()
+	authToken := "TOKEN"
+	duration := "WEEK"
+	service.GetRunningTotal(duration, authToken)
 }
