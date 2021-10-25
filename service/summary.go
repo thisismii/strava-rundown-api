@@ -61,7 +61,7 @@ func retrieveStartDate(duration string) time.Time {
 	currentTime := time.Now().UTC()
 	currentTime = currentTime.Truncate(24 * time.Hour)
 	startTime := currentTime
-	// TODO : swap with enum later
+	
 	if duration == "WEEK" {
 		// first day of the training week
 		weekday := int(currentTime.Weekday())
