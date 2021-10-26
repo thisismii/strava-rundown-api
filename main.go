@@ -16,8 +16,7 @@ type DistanceResponse struct {
 func main() {
 	router := gin.Default()
 	router.GET("/distance", getDistance)
-	router.Run("localhost:8080")
-
+	router.Run("localhost:3000")
 }
 
 func getDistance(context *gin.Context) {
